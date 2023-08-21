@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+      .heading{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 22px;
+        padding: 0px 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      /* Clear floats */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, rgb(207, 142, 13) 50%, rgb(242, 24, 0) 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+
+    .bg3 {
+        animation-duration: 5s;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(25%);
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <img src="images/Sunrisers Hyderabad.png" alt="Sunrisers logo" class="heading">
+    <h1>SUNRISERS HYDERABAD</h1>
+
+    <div class="row">
+      <div class="column">
+        <h2>BATSMEN</h2>
+        <table>
+          <tr>
+            <td><img src="images/kane.webp" alt="Kane Williamson" /></td>
+            <td class="name">Kane Williamson</td>
+          </tr>
+          <tr>
+            <td><img src="images/warner.webp" alt="David Warner" /></td>
+            <td class="name">David Warner(Captian)</td>
+          </tr>
+          <tr>
+            <td><img src="images/manish.webp" alt="Manish Pandey" /></td>
+            <td class="name">Manish Pandey</td>
+          </tr>
+          <tr>
+            <td><img src="images/garg.webp" alt="Priyam Garg" /></td>
+            <td class="name">Priyam Garg</td>
+          </tr>
+          <tr>
+            <td><img src="images/samad.webp" alt="Abdul Samad" /></td>
+            <td class="name">Abdul Samad</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <h2>ALL ROUNDER</h2>
+        <table>
+          <tr>
+            <td><img src="images/vijay.webp" alt="Vijay Shankar" /></td>
+            <td class="name">Vijay Shankar</td>
+          </tr>
+          <tr>
+            <td><img src="images/marsh.webp" alt="Mitchell Marsh" /></td>
+            <td class="name">Mitchell Marsh</td>
+          </tr>
+          <tr>
+            <td><img src="images/allen.webp" alt="Fabian Allen" /></td>
+            <td class="name">Fabian Allen</td>
+          </tr>
+          <tr>
+            <td><img src="images/nabi.webp" alt="Mohammad Nabi" /></td>
+            <td class="name">Mohammad Nabi</td>
+          </tr>
+          <tr>
+            <td><img src="images/holder.webp" alt="Jason Holder" /></td>
+            <td class="name">Jason Holder</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <h2>WICKET KEEPER</h2>
+        <table>
+          <tr>
+            <td><img src="images/jonny.webp" alt="Jonny Bairstow" /></td>
+            <td class="name">Jonny Bairstow</td>
+          </tr>
+          <tr>
+            <td><img src="images/saha.webp" alt="David Warner" /></td>
+            <td class="name">David Warner</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <h2>BOWLER</h2>
+        <table>
+          <tr>
+            <td><img src="images/bhuvaneshwar.webp" alt="Bhuvaneshwar Kumar" /></td>
+            <td class="name">Bhuvaneshwar Kumar</td>
+          </tr>
+          <tr>
+            <td><img src="images/billy.webp" alt="Billy Stanlake" /></td>
+            <td class="name">Billy Stanlake</td>
+          </tr>
+          <tr>
+            <td><img src="images/sandeep.webp" alt="Sandeep Sharma" /></td>
+            <td class="name">Sandeep Sharma</td>
+          </tr>
+          <tr>
+            <td><img src="images/kaul.webp" alt="Siddarth Kaul" /></td>
+            <td class="name">Siddarth Kaul</td>
+          </tr>
+          <tr>
+            <td><img src="images/khaleel.webp" alt="Khaleel Ahmed" /></td>
+            <td class="name">Khaleel Ahmed</td>
+          </tr>
+          <tr>
+            <td><img src="images/natarajan.webp" alt="T Natarajan" /></td>
+            <td class="name">T Natarajan</td>
+          </tr>
+          <tr>
+            <td><img src="images/rashid.webp" alt="Rashid Khan" /></td>
+            <td class="name">Rashid Khan</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      h1{
+        text-align: center;
+      }
+      .player-img {
+        display: inline-block;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, rgb(13, 146, 207) 50%, rgb(0, 20, 242) 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+
+    .bg3 {
+        animation-duration: 5s;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(25%);
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <img src="images/Mumbai Indians.png" alt="Mumbai logo" class="heading">
+    <h1>Mumbai Indians</h1>
+    <div class="row">
+      <div class="column">
+        <h2>Batsmen</h2>
+        <table>
+          <tr>
+            <td>
+              <img class="player-img" src="images/rohit-sharma.webp" alt="RS" />
+            </td>
+            <td><h3>Rohit Sharma</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/chris-lynn.webp" alt="RS" />
+            </td>
+            <td><h3>Chris Lynn</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/suryakumar-yadav.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Suryakumar Yadav</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/saurabh-tiwary.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Saurabh Tiwary</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/anmolpreet-singh.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Anmolpreet Singh</h3></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h2>All Rounders</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/krunal-pandya.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Krunal Pandya</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/kieron-pollard.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Kieron Pollard</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/hardik-pandya.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Hardik Pandya</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/anukul-roy.webp" alt="RS" />
+            </td>
+            <td><h3>Ankul Roy</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/sherfane-rutherford.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Sherfane Rutherford</h3></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h2>Wicket Keepers</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/quinton-de-kock.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Quinton De Kock</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/aditya-tare.webp" alt="RS" />
+            </td>
+            <td><h3>Aditya Tare</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/ishan-kishan.webp" alt="RS" />
+            </td>
+            <td><h3>Ishan Kishan</h3></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h2>Bowlers</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/jasprit-bumrah.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Jasprit Bumrah</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/james-pattinson.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>James Pattinson</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/rahul-chahar.webp" alt="RS" />
+            </td>
+            <td><h3>Rahul Chahar</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/mitchell-mcclenaghan.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Mitchell Mcclenaghan</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/trent-boult.webp" alt="RS" />
+            </td>
+            <td><h3>Trent Boult</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/dhawal-kulkarni.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Dhawal Kulkarni</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="player-img"
+                src="images/nathan-coulter-nile.webp"
+                alt="RS"
+              />
+            </td>
+            <td><h3>Nathan Coulter Nile</h3></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="player-img" src="images/jayant-yadav.webp" alt="RS" />
+            </td>
+            <td><h3>Jayant Yadav</h3></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
